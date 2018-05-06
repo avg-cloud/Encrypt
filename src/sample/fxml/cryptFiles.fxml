@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="thisPane" prefHeight="382.0" prefWidth="436.0" style="-fx-background-color: floralwhite;" styleClass="panesBackground" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.main.Controllers.CryptFilesController">
+   <children>
+      <Pane layoutX="25.0" layoutY="74.0" prefHeight="87.0" prefWidth="387.0" style="-fx-background-color: white;" styleClass="panesBackground" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="24.0" />
+      <Pane layoutX="25.0" layoutY="177.0" prefHeight="87.0" prefWidth="387.0" style="-fx-background-color: white;" styleClass="panesBackground" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="24.0" />
+      <Pane layoutX="25.0" layoutY="291.0" prefHeight="79.0" prefWidth="387.0" style="-fx-background-color: white;" styleClass="panesBackground">
+         <children>
+            <JFXButton fx:id="startButton" layoutX="271.0" layoutY="25.0" onAction="#startCrypt" prefHeight="29.0" prefWidth="102.0" style="-fx-background-color: rgba(85,65,118, 1);" styleClass="buttonCrypt" text="Start" />
+         </children>
+      </Pane>
+      <JFXButton fx:id="inputFileButton" layoutX="35.0" layoutY="123.0" onAction="#selectInputFile" prefHeight="29.0" prefWidth="133.0" style="-fx-background-color: rgba(85,65,118, 1);" styleClass="buttonCrypt" text="Input file" AnchorPane.leftAnchor="35.0" AnchorPane.rightAnchor="268.0">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/addFile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="outputFileButton" layoutX="32.0" layoutY="223.0" onAction="#selectOutputFile" prefHeight="29.0" prefWidth="133.0" style="-fx-background-color: rgba(85,65,118, 1);" styleClass="buttonCrypt" text="Output file" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="271.0">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/outputFile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <ImageView fx:id="inputImage" fitHeight="29.0" fitWidth="29.0" layoutX="78.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="78.0" AnchorPane.rightAnchor="335.15510177612305">
+         <image>
+            <Image url="@images/noneFile.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="outputImage" fitHeight="29.0" fitWidth="29.0" layoutX="75.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="338.15510177612305">
+         <image>
+            <Image url="@images/noneFile.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="pathInputFIle" layoutX="143.0" layoutY="90.0" maxWidth="250.0" text="Path: None" AnchorPane.leftAnchor="143.0" />
+      <Label fx:id="pathOutputFIle" layoutX="140.0" layoutY="191.0" maxWidth="250.0" text="Path: None" AnchorPane.leftAnchor="143.0" />
+      <JFXRadioButton fx:id="cryptMode" layoutX="26.0" layoutY="307.0" onAction="#cryptRadioButton" selected="true" text="Crypt mode" AnchorPane.leftAnchor="30.0" />
+      <JFXRadioButton fx:id="decryptMode" layoutX="26.0" layoutY="338.0" onAction="#decryptRadioButton" text="Decrypt mode" AnchorPane.leftAnchor="30.0" />
+      <JFXSpinner fx:id="spinnerLoad" layoutX="193.0" layoutY="257.0" progress="0.0" visible="false" />
+      <Separator layoutX="25.0" layoutY="160.0" opacity="0.42" prefHeight="0.0" prefWidth="387.0" />
+      <Separator layoutX="22.0" layoutY="293.0" orientation="VERTICAL" prefHeight="73.0" prefWidth="2.0" />
+      <Separator layoutX="25.0" layoutY="72.0" opacity="0.42" prefHeight="0.0" prefWidth="387.0" />
+      <Separator layoutX="25.0" layoutY="261.0" opacity="0.42" prefHeight="0.0" prefWidth="387.0" />
+      <Separator layoutX="25.0" layoutY="177.0" opacity="0.42" prefHeight="0.0" prefWidth="387.0" />
+      <StackPane fx:id="dialogPane" layoutX="81.0" layoutY="105.0" prefHeight="150.0" prefWidth="284.0" visible="false" />
+   </children>
+</AnchorPane>

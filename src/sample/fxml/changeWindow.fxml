@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: antiquewhite; -fx-border-color: rgba(85,65,118, 1); -fx-border-width: 5;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.main.Controllers.changeController">
+   <children>
+      <JFXButton fx:id="chgBut" layoutX="33.0" layoutY="157.0" onAction="#changeButton" style="-fx-background-color: rgba(85,65,118, 1);" styleClass="buttonCrypt" text="Change" />
+      <JFXTextField fx:id="nameField" layoutX="33.0" layoutY="49.0" prefHeight="22.0" prefWidth="134.0" promptText="Name" />
+      <JFXTextField fx:id="keyField" layoutX="33.0" layoutY="89.0" prefHeight="22.0" prefWidth="134.0" promptText="Key" />
+      <JFXTextField fx:id="passwordField" layoutX="34.0" layoutY="123.0" prefHeight="22.0" prefWidth="134.0" promptText="Password" visible="false" />
+      <JFXButton fx:id="cancelBut1" layoutX="114.0" layoutY="157.0" onAction="#cancelButton" prefHeight="22.0" prefWidth="53.0" style="-fx-background-color: rgba(85,65,118, 1);" styleClass="buttonCrypt" text="Cancel" />
+   </children>
+</AnchorPane>

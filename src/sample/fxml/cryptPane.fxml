@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane onMouseMoved="#mouse" prefHeight="382.0" prefWidth="436.0" style="-fx-background-color: floralwhite;" styleClass="panesBackground" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.main.Controllers.cryptController">
+   <children>
+      <TextArea fx:id="TakeText" layoutX="188.0" layoutY="33.0" onMouseClicked="#textClick" prefHeight="223.0" prefWidth="234.0" promptText="Write your text here..." wrapText="true" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="30.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextArea>
+      <Separator layoutX="180.0" layoutY="330.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="250.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <JFXButton fx:id="deCryptBut" layoutX="191.0" layoutY="341.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#deCryptButton" prefHeight="27.0" prefWidth="112.0" styleClass="buttonCrypt" text="Decrypt" />
+      <JFXButton fx:id="cryptBut" layoutX="310.0" layoutY="341.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#CryptButton" prefHeight="27.0" prefWidth="112.0" styleClass="buttonCrypt" text="Crypt" />
+      <JFXTextField fx:id="keyShifr" layoutX="208.0" layoutY="261.0" onMouseClicked="#fieldMouse" prefHeight="22.0" prefWidth="214.0" promptText="..." styleClass="tfCreate" />
+   </children>
+</AnchorPane>

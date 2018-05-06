@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#mouse" prefHeight="382.0" prefWidth="436.0" style="-fx-background-color: floralwhite;" styleClass="panesBackground" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.main.Controllers.ControllerCreate">
+   <children>
+      <Separator layoutY="251.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="0.0" prefWidth="200.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <Separator layoutY="93.0" minHeight="-Infinity" prefHeight="0.0" prefWidth="180.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+      <JFXTextField fx:id="publicKey" layoutX="80.0" layoutY="27.0" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#generateFieldClick" prefHeight="22.0" prefWidth="324.0" promptText="Public key" styleClass="tfCreate" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="27.0" />
+      <JFXTextField fx:id="friendKey" layoutX="80.0" layoutY="106.0" prefHeight="22.0" prefWidth="324.0" promptText="Friend key" style="-fx-background-color: floralwhite;" styleClass="tfCreate" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="32.0" />
+      <JFXTextField fx:id="yourKey" layoutX="80.0" layoutY="139.0" prefHeight="22.0" prefWidth="324.0" promptText="Your key" styleClass="tfCreate" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="32.0" />
+      <JFXTextField fx:id="getKey" layoutX="80.0" layoutY="175.0" onMouseClicked="#getFieldClick" prefHeight="22.0" prefWidth="324.0" promptText="Get key" styleClass="tfCreate" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="32.0" />
+      <JFXTextField fx:id="newFriendKey" layoutX="79.0" layoutY="263.0" prefHeight="22.0" prefWidth="141.0" promptText="New friend key" styleClass="tfCreate" AnchorPane.leftAnchor="79.0" />
+      <JFXTextField fx:id="nameProfile" layoutX="232.0" layoutY="263.0" prefHeight="22.0" prefWidth="172.0" promptText="Name" styleClass="tfCreate" />
+      <JFXTextField fx:id="profileKey" layoutX="232.0" layoutY="298.0" prefHeight="22.0" prefWidth="172.0" promptText="Profile key" styleClass="tfCreate" />
+      <JFXButton fx:id="generateBut" layoutX="323.0" layoutY="59.0" onAction="#generateKey" styleClass="buttonCrypt" text="Generate key" AnchorPane.rightAnchor="31.0" />
+      <JFXButton fx:id="useBut" layoutX="321.0" layoutY="208.0" onAction="#useMethod" styleClass="buttonCrypt" text="Use friend key" AnchorPane.rightAnchor="28.0" />
+      <JFXButton fx:id="saveBut" layoutX="321.0" layoutY="344.0" onAction="#saveMethod" prefHeight="24.0" prefWidth="87.0" styleClass="buttonCrypt" text="Save" AnchorPane.rightAnchor="28.0" />
+      <JFXCheckBox fx:id="checkPass" checkedColor="#5b0a75" layoutX="232.0" layoutY="347.0" onAction="#passwordFieldNeed" prefHeight="18.0" prefWidth="82.0" text="Password" />
+      <JFXPasswordField fx:id="passwordField" layoutX="90.0" layoutY="347.0" promptText="Password" styleClass="tfCreate" visible="false" />
+      <Separator layoutX="10.0" layoutY="369.0" minHeight="-Infinity" prefHeight="0.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+      <Separator layoutX="10.0" layoutY="13.0" minHeight="-Infinity" prefHeight="0.0" prefWidth="200.0" visible="false" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Separator layoutX="11.0" layoutY="9.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="368.0" prefWidth="0.0" visible="false" />
+      <Separator layoutX="428.0" layoutY="9.0" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="368.0" prefWidth="0.0" visible="false" />
+   </children>
+</AnchorPane>
