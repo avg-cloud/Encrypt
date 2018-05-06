@@ -1,6 +1,8 @@
 # Encrypt
 My own program which can crypt files or messages with help AES/CBC mode 256 bit key. Also if you want then here you can create key for 2 friends using RSA and save it.
+
 Руководство по использованию программы.
+
 Продублировано в файле Instruction.txt в папке с проектом.
 
 1)Шифрование(При условии, что ключ был передан по безопасному каналу, иначе п.2):
