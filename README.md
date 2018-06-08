@@ -1,7 +1,7 @@
 # Encrypt
-<p>My own program which can crypt files or messages with help AES/CBC mode 256 bit key. Also if you want then here you can create key for 2 friends using RSA and save it.</p>
+<p><h2>My own program which can crypt files or messages with help AES/CBC mode 256 bit key. Also if you want then here you can create key for 2 friends using RSA and save it.</h2></p>
 
-<p>Руководство по использованию программы.</p>
+<p text-color="white" >Руководство по использованию программы.</p>
 
 <p><p><ul><b>1)Шифрование(При условии, что ключ был передан по безопасному каналу, иначе п.2):</b></p>
   <i>
