@@ -1,7 +1,7 @@
 # Encrypt
 <p><h2>My own program which can crypt files or messages with help AES/CBC mode 256 bit key. Also if you want then here you can create key for 2 friends using RSA and save it.</h2></p>
 
-<p text-color="white" >Руководство по использованию программы.</p>
+<p text-color="white" ><h3>Руководство по использованию программы.</h3></p>
 
 <p><p><ul><b>1)Шифрование(При условии, что ключ был передан по безопасному каналу, иначе п.2):</b></p>
   <i>
@@ -47,6 +47,6 @@
   </i>
 </ul></p>
 
-<h5>Download jar file: <a href="https://yadi.sk/d/fgrFbN1r3XSNRo"/></h5>
+<h5>Download jar file: <a href="https://yadi.sk/d/fgrFbN1r3XSNRo">download</a></h5>
 <h6>(You need install Java to start this program)</h6>
 
