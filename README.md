@@ -47,4 +47,6 @@
   </i>
 </ul></p>
 
+<h5>Download jar file: <a href="https://yadi.sk/d/fgrFbN1r3XSNRo"/></h5>
+<h6>(You need install Java to start this program)</h6>
 
